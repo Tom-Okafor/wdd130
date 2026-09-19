@@ -3,15 +3,8 @@
     --secondary-color: #F7DC68;
     --accent-color-1: #F46C3F;
     --acent-color-2: #A7226F;
-    --heading-font: Georgia,
-        'Times New Roman',
-        Times,
-        serif;
-    --body-font: 'Gill Sans',
-        'Gill Sans MT',
-        Calibri,
-        'Trebuchet MS',
-        sans-serif
+    --heading-font: Georgia, 'Times New Roman', Times, serif;
+    --body-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 * {
@@ -107,5 +100,5 @@ footer a img {
 }
 
 footer {
-    border-top: 2px solid var(--primary-color);
+    border-top: 2px solid var(--secondary-color);
 }
