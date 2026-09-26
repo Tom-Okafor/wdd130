@@ -25,6 +25,35 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header li {
+    padding: 1rem;
+    border: 1.5px solid rgb(0, 0, 0);
+    flex: 1;
+}
+
+header li:not(:first-child) {
+    border-left: 0;
+}
+
+header li a {
+    text-decoration: none;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -96,9 +125,44 @@ footer a {
 }
 
 footer a img {
-    width: 50px;
+    width: 32px;
 }
 
 footer {
     border-top: 2px solid var(--secondary-color);
+    display: flex;
+}
+
+footer p {
+    margin-inline: auto;
+}
+
+.history article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.history article img {
+    width: 100%;
+    height: auto;
+}
+
+.figures {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    margin-block: 1.5rem;
+}
+
+.figures img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.figures figcaption {
+    text-align: center;
 }
