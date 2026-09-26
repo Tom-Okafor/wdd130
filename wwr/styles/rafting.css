@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #239599;
+    --primary-color: rgb(35 149 193);
     --secondary-color: #F7DC68;
     --accent-color-1: #F46C3F;
     --acent-color-2: #A7226F;
@@ -90,7 +90,7 @@ article {
     text-align: center;
     opacity: 0.8;
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -101,7 +101,7 @@ article {
     padding: 16px;
     background-color: var(--primary-color);
     opacity: 0.8;
-    color: white;
+    color: black;
 }
 
 .hero article img {
