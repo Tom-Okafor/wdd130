@@ -115,7 +115,7 @@ article {
 
 h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: #000;
     padding: 16px;
     text-align: center;
 }
