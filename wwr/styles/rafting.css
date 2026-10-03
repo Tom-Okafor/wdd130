@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(35 149 193);
+    --primary-color: #2395c1;
     --secondary-color: #F7DC68;
     --accent-color-1: #F46C3F;
-    --acent-color-2: #30011d;
+    --acent-color-2: #034760;
     --heading-font: Georgia, 'Times New Roman', Times, serif;
     --body-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
