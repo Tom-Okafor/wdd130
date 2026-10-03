@@ -182,6 +182,10 @@ footer p {
     padding: 0;
 }
 
+.company-details h1 {
+    color: var(--acent-color-2);
+}
+
 .company-details p {
     padding: 0;
     margin: 0;
