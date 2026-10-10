@@ -294,23 +294,26 @@ form button {
 
 /* homepage styles */
 
-.homepage-hero {
+.homepage-hero,
+.trips-hero {
     max-width: 100%;
     padding: 0;
     position: relative;
 }
 
-.homepage-hero img {
+.homepage-hero img,
+.trips-hero img {
     width: 100%;
     height: auto;
 }
 
-.homepage-hero article {
+.homepage-hero article,
+.trips-hero article {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0px;
     background-color: rgba(0, 0, 0, 0.4);
     margin: 0;
     display: flex;
@@ -319,21 +322,24 @@ form button {
     align-items: center;
 }
 
-.homepage-hero article h1 {
+.homepage-hero article h1,
+.trips-hero article h1 {
     color: white;
     text-transform: uppercase;
     font-size: 3rem;
     letter-spacing: 2px;
 }
 
-.homepage-hero article h2 {
+.homepage-hero article h2,
+.trips-hero article h2 {
     background-color: transparent;
     color: white;
     font-size: 1.5rem;
     padding: 0;
 }
 
-.homepage-hero article a {
+.homepage-hero article a,
+.trips-hero article a {
     text-decoration: none;
     font-size: 1.3rem;
     color: black;
@@ -347,14 +353,14 @@ form button {
 
 .intro-content {
     text-align: center;
-    margin-top: 16px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .intro-content h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--acent-color-2);
     text-transform: capitalize;
     margin-bottom: 12px;
@@ -368,8 +374,8 @@ form button {
 
 .intro-content h4 {
     color: var(--acent-color-2);
-    font-size: 1.1rem;
-    margin: 16px;
+    font-size: 1.3rem;
+    margin-top: 16px;
 }
 
 .intro-content form {
@@ -404,8 +410,8 @@ form button {
     border: none;
     outline: none;
     font-family: var(--body-font);
-    padding-block: 10px;
-    font-size: 1rem;
+    padding-block: 12px;
+    font-size: 1.05rem;
     letter-spacing: 1px;
     width: 60%;
     border-radius: 8px;
@@ -413,24 +419,24 @@ form button {
 }
 
 .credentials {
-    margin-block: 52px;
+    margin-block: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 48px;
 }
 
 .credentials > div {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .credentials h3,
 .choice-pitch h3 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: var(--acent-color-2);
     text-transform: capitalize;
     text-align: center;
@@ -445,7 +451,8 @@ form button {
     font-weight: 600;
     border: 1.5px solid var(--accent-color-1);
     border-radius: 8px;
-    padding: 8px 16px;
+    padding: 16px;
+    text-align: center;
 }
 
 .credentials img {
@@ -453,11 +460,11 @@ form button {
 }
 
 .choice-pitch {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .choice-pitch > div {
-    margin-top: 24px;
+    margin-top: 48px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -496,7 +503,8 @@ figcaption h4 {
 .testimonials {
     max-width: 100%;
     background-color: var(--acent-color-2);
-    margin-top: 52px;
+    margin-top: 100px;
+    margin-bottom: 52px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -527,4 +535,95 @@ figcaption h4 {
 .testimonial-two {
     bottom: 68px;
     right: 15%;
+}
+
+.trips-summary,
+.trip-details {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trips-summary h3,
+.trip-details h3 {
+    color: var(--acent-color-2);
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+
+.trips-summary table {
+    border-spacing: 4px;
+}
+
+td {
+    background-color: var(--primary-color);
+}
+
+tr:nth-child(even) td {
+    background-color: var(--accent-color-1);
+}
+
+th {
+    background-color: var(--text-color);
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 20px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.trip-details {
+    max-width: 100%;
+    background-color: #f3f3f3;
+    padding-block: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.trip-details li {
+    list-style-position: inside;
+}
+
+.trip-details > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.trip-details > div > div {
+    width: 40%;
+    border: 2px solid var(--accent-color-1);
+    border-radius: 24px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    overflow: hidden;
+}
+
+.trip-details div img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.trip-details h4 {
+    color: var(--acent-color-2);
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    border-top: 2px solid var(--accent-color-1);
+    padding-top: 12px;
+}
+
+.trip-details article {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 32px 32px;
 }
