@@ -93,9 +93,8 @@ section {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.8;
-    background-color: var(--acent-color-2);
-    color: white;
+    background-color: #2395c1d0;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -104,9 +103,8 @@ section {
     bottom: 5%;
     left: 0%;
     padding: 16px;
-    background-color: var(--acent-color-2);
-    opacity: 0.8;
-    color: white;
+    background-color: #2395c1d0;
+    color: black;
 }
 
 .hero article img {
