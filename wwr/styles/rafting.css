@@ -103,8 +103,9 @@ section {
     bottom: 5%;
     left: 0%;
     padding: 16px;
-    background-color: #2395c1;
+    background-color: #2395c1de;
     color: black;
+    font-size: 1.1rem;
 }
 
 .hero article img {
