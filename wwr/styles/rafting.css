@@ -2,7 +2,8 @@
     --primary-color: #2395c1;
     --secondary-color: #F7DC68;
     --accent-color-1: #F46C3F;
-    --acent-color-2: #034760;
+    --acent-color-2: #2b7691;
+    --text-color: #181717;
     --heading-font: Georgia, 'Times New Roman', Times, serif;
     --body-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -15,15 +16,8 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--acent-color-2);
+    color: var(--text-color);
     line-height: 1.4;
-}
-
-header,
-main,
-footer {
-    max-width: 1024px;
-    margin: 0 auto;
 }
 
 header {
@@ -43,7 +37,7 @@ header nav ul {
 
 header li {
     padding: 1rem;
-    border: 1.5px solid rgb(0, 0, 0);
+    border: 1.5px solid var(--primary-color);
     flex: 1;
     text-align: center;
 }
@@ -54,21 +48,28 @@ header li:not(:first-child) {
 
 header li a {
     text-decoration: none;
-    color: #000;
+    color: var(--acent-color-2);
     font-weight: 500;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    /* color: var(--primary-color); */
 }
 
 nav,
-p,
-section,
-article {
+.about-main p,
+.about-main article {
     margin: 16px;
+    padding: 8px;
+}
+
+section {
+    max-width: 1024px;
+    margin: 32px auto;
     padding: 8px;
 }
 
@@ -135,6 +136,7 @@ footer a img {
 footer {
     border-top: 2px solid var(--secondary-color);
     display: flex;
+    align-items: center;
 }
 
 footer p {
@@ -195,7 +197,7 @@ footer p {
     display: flex;
     gap: 3rem;
     padding: 0;
-    margin-inline: 0;
+    margin-inline: auto;
 }
 
 .map-form iframe {
@@ -256,13 +258,14 @@ form button {
     border-radius: 5px;
     padding: 1rem;
     margin-top: 2rem;
-    margin-inline: 0;
+    margin-inline: auto;
 }
 
 .profiles > h2 {
     background-color: transparent;
     padding: 0;
     margin-bottom: 8px;
+    color: var(--acent-color-2);
 }
 
 .profiles div {
@@ -287,4 +290,241 @@ form button {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+/* homepage styles */
+
+.homepage-hero {
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.homepage-hero img {
+    width: 100%;
+    height: auto;
+}
+
+.homepage-hero article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-hero article h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.homepage-hero article h2 {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.homepage-hero article a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    background-color: var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 24px;
+    font-weight: 600;
+    word-spacing: 4px;
+    margin-top: 20px;
+}
+
+.intro-content {
+    text-align: center;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-content h3 {
+    font-size: 1.4rem;
+    color: var(--acent-color-2);
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.intro-content p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+
+.intro-content h4 {
+    color: var(--acent-color-2);
+    font-size: 1.1rem;
+    margin: 16px;
+}
+
+.intro-content form {
+    border: 1.5px solid var(--accent-color-1);
+    padding: 16px 24px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    gap: 16px;
+    align-items: center;
+}
+
+.intro-content form p {
+    color: var(--acent-color-2);
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+.intro-content input {
+    width: 280px;
+    margin-left: 8px;
+}
+
+.intro-content button {
+    background-color: var(--primary-color);
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-family: var(--body-font);
+    padding-block: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.credentials {
+    margin-block: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.credentials > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credentials h3,
+.choice-pitch h3 {
+    font-size: 1.3rem;
+    color: var(--acent-color-2);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.credentials > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: var(--acent-color-2);
+    font-weight: 600;
+    border: 1.5px solid var(--accent-color-1);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.credentials img {
+    height: 80px;
+}
+
+.choice-pitch {
+    margin-top: 20px;
+}
+
+.choice-pitch > div {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.choice-pitch figure {
+    width: 48%;
+    border: 2px solid var(--accent-color-1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+}
+
+.choice-pitch img {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.figure-three {
+    margin-inline: auto;
+}
+
+figcaption h4 {
+    color: var(--acent-color-2);
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    border-top: 2px solid var(--accent-color-1);
+    padding-top: 8px;
+}
+
+.testimonials {
+    max-width: 100%;
+    background-color: var(--acent-color-2);
+    margin-top: 52px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 48px;
+}
+
+.testimonials > img {
+    width: 55%;
+}
+
+.testimonials div {
+    width: 200px;
+    background-color: var(--accent-color-1);
+    padding: 20px;
+    position: absolute;
+}
+
+.testimonials div img {
+    width: 30px;
+}
+
+.testimonial-one {
+    top: 68px;
+    left: 15%;
+}
+
+.testimonial-two {
+    bottom: 68px;
+    right: 15%;
 }
