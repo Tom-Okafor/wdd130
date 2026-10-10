@@ -48,7 +48,7 @@ header li:not(:first-child) {
 
 header li a {
     text-decoration: none;
-    color: var(--acent-color-2);
+    color: var(--text-color);
     font-weight: 500;
 }
 
@@ -94,8 +94,8 @@ section {
     padding: 16px;
     text-align: center;
     opacity: 0.8;
-    background-color: var(--primary-color);
-    color: black;
+    background-color: var(--acent-color-2);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -104,9 +104,9 @@ section {
     bottom: 5%;
     left: 0%;
     padding: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--acent-color-2);
     opacity: 0.8;
-    color: black;
+    color: white;
 }
 
 .hero article img {
