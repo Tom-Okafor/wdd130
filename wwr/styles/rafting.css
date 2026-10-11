@@ -1,8 +1,8 @@
 :root {
     --primary-color: #2395c1;
     --secondary-color: #F7DC68;
-    --accent-color-1: #F46C3F;
-    --acent-color-2: #2b7691;
+    --accent-color-1: #fb6837;
+    --acent-color-2: #7a1f67;
     --text-color: #181717;
     --heading-font: Georgia, 'Times New Roman', Times, serif;
     --body-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -57,7 +57,6 @@ h2,
 h3,
 h4 {
     font-family: var(--heading-font);
-    /* color: var(--primary-color); */
 }
 
 nav,
@@ -93,8 +92,8 @@ section {
     width: 100%;
     padding: 16px;
     text-align: center;
-    background-color: #2395c1d0;
-    color: black;
+    background-color: #7a1f67d0;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -103,8 +102,8 @@ section {
     bottom: 5%;
     left: 0%;
     padding: 16px;
-    background-color: #2395c1de;
-    color: black;
+    background-color: #7a1f67d0;
+    color: white;
     font-size: 1.1rem;
 }
 
@@ -133,7 +132,7 @@ footer a img {
 }
 
 footer {
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--primary-color);
     display: flex;
     align-items: center;
 }
@@ -403,8 +402,8 @@ form button {
 }
 
 .intro-content button {
-    background-color: var(--primary-color);
-    color: black;
+    background-color: var(--acent-color-2);
+    color: white;
     font-weight: 600;
     border: none;
     outline: none;
@@ -520,6 +519,7 @@ figcaption h4 {
     background-color: var(--accent-color-1);
     padding: 20px;
     position: absolute;
+    color: black;
 }
 
 .testimonials div img {
@@ -558,11 +558,13 @@ figcaption h4 {
 }
 
 td {
-    background-color: var(--primary-color);
+    background-color: var(--acent-color-2);
+    color: white;
 }
 
 tr:nth-child(even) td {
     background-color: var(--accent-color-1);
+    color: black
 }
 
 th {
